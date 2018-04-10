@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  iOSNoteList
+//
+//  Created by LuPengDa on 15/5/12.
+//  Copyright (c) 2015年 xj. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#ifndef mzo_pch
+#define mzo_pch
+
+// *************** 日志 ******************
+#ifdef DEBUG
+#define MZOLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#define MZOLog(...)
+#endif
+
+#endif

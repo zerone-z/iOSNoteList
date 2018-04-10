@@ -1,0 +1,10 @@
+/* 
+  Record.strings
+  iOSNoteList
+
+  Created by CTTQ\8104323 on 15/7/28.
+  Copyright (c) 2015年 xj. All rights reserved.
+*/
+
+// 真机发送内存警告
+//[[UIApplication sharedApplication] performSelector:@selector(_performMemoryWarning)];

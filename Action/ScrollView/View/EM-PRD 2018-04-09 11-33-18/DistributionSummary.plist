@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EM-PRD.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>DD8A4C26F773D7019CAD512746A49FD2E5AC917F</string>
+				<key>dateExpires</key>
+				<string>2019/7/18</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>D75W8X4F7B.com.cttq.EMApp</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>D75W8X4F7B</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>D75W8X4F7B.com.cttq.EMApp</string>
+					<string>D75W8X4F7B.com.cttq.ShareGroup</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>EM-PRD.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>0c50ecc4-7e44-493f-a83d-f2a21b5ad03c</string>
+				<key>name</key>
+				<string>iOS Team Inhouse Provisioning Profile: com.cttq.EMApp</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>D75W8X4F7B</string>
+				<key>name</key>
+				<string>Jiangsu Chia-tai Tianqing Pharmaceutical Co. Ltd</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

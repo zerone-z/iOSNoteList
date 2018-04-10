@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MoneyConvertVC">
+            <connections>
+                <outlet property="number" destination="Ohs-Zq-mF8" id="aZo-eq-KYj"/>
+                <outlet property="showValue" destination="t6V-S4-B0x" id="dtY-Pk-DdA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4uC-3x-WPg">
+                    <rect key="frame" x="10" y="129" width="66" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="66" id="VjC-JI-Hsy"/>
+                        <constraint firstAttribute="height" constant="21" id="Wb2-HZ-pUa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6V-S4-B0x" userLabel="Value">
+                    <rect key="frame" x="97" y="129" width="0.0" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="9lW-cB-MjW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cki-EF-kSN">
+                    <rect key="frame" x="172" y="178" width="31" height="30"/>
+                    <state key="normal" title="转换">
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="convertMoney:" destination="-1" eventType="touchUpInside" id="c2G-OT-mK7"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ohs-Zq-mF8" userLabel="金额">
+                    <rect key="frame" x="100" y="80" width="175" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="t6V-S4-B0x" firstAttribute="leading" secondItem="4uC-3x-WPg" secondAttribute="trailing" constant="21" id="5hR-xJ-srh"/>
+                <constraint firstItem="Ohs-Zq-mF8" firstAttribute="top" secondItem="5Y5-V0-XBE" secondAttribute="top" constant="36" id="7Hl-Pu-Xrm"/>
+                <constraint firstItem="4uC-3x-WPg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="VmP-jf-LQF"/>
+                <constraint firstItem="t6V-S4-B0x" firstAttribute="top" secondItem="Ohs-Zq-mF8" secondAttribute="bottom" constant="19" id="aqc-dj-A4Z"/>
+                <constraint firstAttribute="centerX" secondItem="cki-EF-kSN" secondAttribute="centerX" id="i1i-Sd-I5P"/>
+                <constraint firstItem="4uC-3x-WPg" firstAttribute="top" secondItem="Ohs-Zq-mF8" secondAttribute="bottom" constant="19" id="lcA-Uv-8Dd"/>
+                <constraint firstAttribute="trailing" secondItem="Ohs-Zq-mF8" secondAttribute="trailing" constant="100" id="seJ-SN-YJv"/>
+                <constraint firstItem="cki-EF-kSN" firstAttribute="top" secondItem="t6V-S4-B0x" secondAttribute="bottom" constant="28" id="ucq-fm-07R"/>
+                <constraint firstItem="Ohs-Zq-mF8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="100" id="y37-Sm-DUe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="5Y5-V0-XBE"/>
+            <point key="canvasLocation" x="374.5" y="331"/>
+        </view>
+    </objects>
+</document>
