@@ -22,3 +22,6 @@
   - 录音控件（AVFoundation）
   - 图片视频选择器（AssetsLibrary）
   - 对象归档的使用
+  - 加解密
+    - AES
+    - DES

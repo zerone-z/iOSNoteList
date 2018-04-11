@@ -92,5 +92,11 @@
 		<key>vc</key>
 		<string>ArchiverVC</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>加解密</string>
+		<key>sb</key>
+		<string>Encrypt</string>
+	</dict>
 </array>
 </plist>

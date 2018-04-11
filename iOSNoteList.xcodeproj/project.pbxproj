@@ -95,6 +95,10 @@
 		ABCD27EB1B1C549900CC0780 /* AddressListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABCD27E91B1C549900CC0780 /* AddressListTVC.xib */; };
 		ABCEA8CD1B33AFFA00CD0DA7 /* blend.png in Resources */ = {isa = PBXBuildFile; fileRef = ABCEA8CC1B33AFFA00CD0DA7 /* blend.png */; };
 		ABE8485C1B2EC5AA006752D3 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = ABE8485B1B2EC5AA006752D3 /* icon.png */; };
+		ABF2C98A207CAD9A0055169F /* Encrypt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABF2C989207CAD9A0055169F /* Encrypt.storyboard */; };
+		ABF2C98E207CAFD90055169F /* EncryptVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF2C98D207CAFD90055169F /* EncryptVC.m */; };
+		ABF2C993207CB0E90055169F /* AESEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF2C990207CB0E80055169F /* AESEncrypt.m */; };
+		ABF2C994207CB0E90055169F /* DESEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF2C992207CB0E80055169F /* DESEncrypt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -257,6 +261,13 @@
 		ABCD27E91B1C549900CC0780 /* AddressListTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressListTVC.xib; sourceTree = "<group>"; };
 		ABCEA8CC1B33AFFA00CD0DA7 /* blend.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blend.png; sourceTree = "<group>"; };
 		ABE8485B1B2EC5AA006752D3 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		ABF2C989207CAD9A0055169F /* Encrypt.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Encrypt.storyboard; sourceTree = "<group>"; };
+		ABF2C98C207CAFD90055169F /* EncryptVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EncryptVC.h; sourceTree = "<group>"; };
+		ABF2C98D207CAFD90055169F /* EncryptVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncryptVC.m; sourceTree = "<group>"; };
+		ABF2C98F207CB0E80055169F /* AESEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESEncrypt.h; sourceTree = "<group>"; };
+		ABF2C990207CB0E80055169F /* AESEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESEncrypt.m; sourceTree = "<group>"; };
+		ABF2C991207CB0E80055169F /* DESEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DESEncrypt.h; sourceTree = "<group>"; };
+		ABF2C992207CB0E80055169F /* DESEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DESEncrypt.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -606,6 +617,7 @@
 				AB38B289207C45D100D660A9 /* AudioRecorder */,
 				AB38B299207C527400D660A9 /* AssetsPicker */,
 				AB86CE501B01F84300782782 /* Archiver */,
+				ABF2C988207CAD6D0055169F /* Encrypt */,
 				AB59A2EF1AD7A38C00DA4AA3 /* Common */,
 			);
 			path = Action;
@@ -800,6 +812,28 @@
 			path = AddressList;
 			sourceTree = "<group>";
 		};
+		ABF2C988207CAD6D0055169F /* Encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				ABF2C98B207CADA00055169F /* Class */,
+				ABF2C989207CAD9A0055169F /* Encrypt.storyboard */,
+				ABF2C98C207CAFD90055169F /* EncryptVC.h */,
+				ABF2C98D207CAFD90055169F /* EncryptVC.m */,
+			);
+			path = Encrypt;
+			sourceTree = "<group>";
+		};
+		ABF2C98B207CADA00055169F /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				ABF2C98F207CB0E80055169F /* AESEncrypt.h */,
+				ABF2C990207CB0E80055169F /* AESEncrypt.m */,
+				ABF2C991207CB0E80055169F /* DESEncrypt.h */,
+				ABF2C992207CB0E80055169F /* DESEncrypt.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -897,6 +931,7 @@
 				AB97ABD61AD564BE00425854 /* Images.xcassets in Resources */,
 				ABC62AEC1B674E7C0065F2FB /* Record.strings in Resources */,
 				ABCD27D81B1BF13F00CC0780 /* ViewHierarchyVC.xib in Resources */,
+				ABF2C98A207CAD9A0055169F /* Encrypt.storyboard in Resources */,
 				ABA7CA0C1AD62BCA005116B9 /* Config.plist in Resources */,
 				AB8599012079F47700DCAB98 /* 2.png in Resources */,
 				ABB437471B0B0286004E8C12 /* LocationVC.xib in Resources */,
@@ -959,6 +994,7 @@
 				ABB6DBC01B01D4CC001C9374 /* ClassDynamicManage.m in Sources */,
 				AB59A2E91AD79A8900DA4AA3 /* NSString+SystemInfo.m in Sources */,
 				AB8598F32079F0DB00DCAB98 /* BoardWidthBrowseVC.m in Sources */,
+				ABF2C98E207CAFD90055169F /* EncryptVC.m in Sources */,
 				ABB616721B1467E8005B8CB5 /* ColorAndImageVC.m in Sources */,
 				ABB6DBC41B01D547001C9374 /* UIScrollView+Associative.m in Sources */,
 				AB38B2AD207C529D00D660A9 /* XJAssetsGroupViewController.m in Sources */,
@@ -972,6 +1008,7 @@
 				ABB6DC121B01EABC001C9374 /* ScanCodeVC.m in Sources */,
 				AB84B89D1B297621006F7A5A /* NSString+Extend.m in Sources */,
 				AB97ABF01AD566A600425854 /* HomePageTVC.m in Sources */,
+				ABF2C994207CB0E90055169F /* DESEncrypt.m in Sources */,
 				ABB616691B14546E005B8CB5 /* UIColor+Extend.m in Sources */,
 				AB8598E22079EA7600DCAB98 /* SafeCollectionVC.m in Sources */,
 				AB38B2AE207C529D00D660A9 /* XJAssetsCell.m in Sources */,
@@ -979,6 +1016,7 @@
 				AB97ABCB1AD564BE00425854 /* main.m in Sources */,
 				AB6606A01BE0AC5000F1E46C /* SafeCollection.m in Sources */,
 				ABCD27EA1B1C549900CC0780 /* AddressListTVC.m in Sources */,
+				ABF2C993207CB0E90055169F /* AESEncrypt.m in Sources */,
 				AB8599052079F54F00DCAB98 /* MZOBoardWidthBrowseCell.m in Sources */,
 				ABA7CA171AD650B6005116B9 /* NSString+DirectoryPath.m in Sources */,
 				AB695DEC1B16F58C00979DD4 /* ManageViewController.m in Sources */,
