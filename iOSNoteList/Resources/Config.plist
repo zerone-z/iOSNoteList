@@ -98,5 +98,11 @@
 		<key>sb</key>
 		<string>Encrypt</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>图表</string>
+		<key>sb</key>
+		<string>Chart</string>
+	</dict>
 </array>
 </plist>
