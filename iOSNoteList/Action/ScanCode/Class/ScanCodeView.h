@@ -25,6 +25,9 @@ typedef NS_ENUM(NSInteger, ScanCodeType) {
 
 @interface ScanCodeView : UIView
 
+/// 识别二维码图片，iOS 8.0 and later
++ (NSArray<NSString *> *)recognizeImage:(UIImage*)image;
+
 @property (nonatomic, assign) ScanCodeType scanCodeType;
 
 @property (nonatomic, assign) id<ScanCodeViewDelegate> delegate;
@@ -34,5 +37,12 @@ typedef NS_ENUM(NSInteger, ScanCodeType) {
 - (void)startScanning;
 
 - (void)stopScanning;
+
+/// 闪光灯是否开启
+- (BOOL)torchOn;
+/// 开启/关闭闪光灯
+- (void)torchOn:(BOOL)on;
+/// 自动改变闪光灯状态
+- (void)changeTorch;
 
 @end

@@ -68,6 +68,7 @@
 		AB97ABD91AD564BE00425854 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB97ABD71AD564BE00425854 /* LaunchScreen.xib */; };
 		AB97ABE51AD564BE00425854 /* iOSNoteListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB97ABE41AD564BE00425854 /* iOSNoteListTests.m */; };
 		AB97ABF01AD566A600425854 /* HomePageTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AB97ABEF1AD566A600425854 /* HomePageTVC.m */; };
+		AB99ECBD2085D45100D6914A /* UIImage+QRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = AB99ECBC2085D45100D6914A /* UIImage+QRCodeGenerator.m */; };
 		ABA7CA021AD61CA9005116B9 /* NSNumber+MoneyConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7CA011AD61CA9005116B9 /* NSNumber+MoneyConvert.m */; };
 		ABA7CA091AD61E2F005116B9 /* MoneyConvertVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA7CA071AD61E2F005116B9 /* MoneyConvertVC.m */; };
 		ABA7CA0A1AD61E2F005116B9 /* MoneyConvertVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = ABA7CA081AD61E2F005116B9 /* MoneyConvertVC.xib */; };
@@ -303,6 +304,8 @@
 		AB97ABE41AD564BE00425854 /* iOSNoteListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSNoteListTests.m; sourceTree = "<group>"; };
 		AB97ABEE1AD566A500425854 /* HomePageTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageTVC.h; sourceTree = "<group>"; };
 		AB97ABEF1AD566A600425854 /* HomePageTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageTVC.m; sourceTree = "<group>"; };
+		AB99ECBB2085D45100D6914A /* UIImage+QRCodeGenerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+QRCodeGenerator.h"; sourceTree = "<group>"; };
+		AB99ECBC2085D45100D6914A /* UIImage+QRCodeGenerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+QRCodeGenerator.m"; sourceTree = "<group>"; };
 		ABA7CA001AD61CA9005116B9 /* NSNumber+MoneyConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+MoneyConvert.h"; sourceTree = "<group>"; };
 		ABA7CA011AD61CA9005116B9 /* NSNumber+MoneyConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+MoneyConvert.m"; sourceTree = "<group>"; };
 		ABA7CA061AD61E2F005116B9 /* MoneyConvertVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoneyConvertVC.h; sourceTree = "<group>"; };
@@ -958,6 +961,8 @@
 				ABB616681B14546E005B8CB5 /* UIColor+Extend.m */,
 				ABCD27E11B1C2C5900CC0780 /* XJGifImageView.h */,
 				ABCD27E21B1C2C5900CC0780 /* XJGifImageView.m */,
+				AB99ECBB2085D45100D6914A /* UIImage+QRCodeGenerator.h */,
+				AB99ECBC2085D45100D6914A /* UIImage+QRCodeGenerator.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -1262,6 +1267,7 @@
 				ABA7CA171AD650B6005116B9 /* NSString+DirectoryPath.m in Sources */,
 				AB695DEC1B16F58C00979DD4 /* ManageViewController.m in Sources */,
 				AB38B2B1207C529D00D660A9 /* XJAssetsMediaPlayerViewController.m in Sources */,
+				AB99ECBD2085D45100D6914A /* UIImage+QRCodeGenerator.m in Sources */,
 				AB86CE541B01F84300782782 /* ClassArchiver.m in Sources */,
 				AB84B8B51B2AB55E006F7A5A /* GraphicsVC.m in Sources */,
 				AB754C9A207DB93600ED4012 /* BarChartView.m in Sources */,

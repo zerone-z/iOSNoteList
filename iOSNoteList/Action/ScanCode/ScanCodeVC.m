@@ -27,6 +27,12 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [_scanCodeView changeTorch];
+}
+
+#pragma mark - Method Private
 - (void)createScanCodeView
 {
     CGRect frame = CGRectZero;
@@ -43,6 +49,7 @@
     [self.view addSubview:_scanCodeView];
 }
 
+#pragma mark - Event Response
 - (IBAction)scanQRcode:(UIButton *)sender {
     if (currentCodeType == ScanCodeTypeQr) {
         [_scanCodeView stopScanning];
@@ -72,12 +79,11 @@
     [self createScanCodeView];
 }
 
+#pragma mark - ScanCodeViewDelegate
 - (void)scanCodeView:(ScanCodeView *)scanCodeView didScannedCodeValue:(NSString *)codeValue
 {
-    dispatch_async(dispatch_get_main_queue(), ^{
-        self.code.text = codeValue;
-        [self->_scanCodeView stopScanning];
-    });
+    self.code.text = codeValue;
+//    [_scanCodeView stopScanning];
 }
 
 @end
