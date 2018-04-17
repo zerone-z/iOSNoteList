@@ -12,6 +12,7 @@
 #import "UIColor+Extend.h"
 #import "UIImage+Extend.h"
 #import "XJGifImageView.h"
+#import "UIImage+QRCodeGenerator.h"
 
 @interface ColorAndImageVC () {
     UIImage *_eagerImage;
@@ -108,6 +109,35 @@
     UIImageView *imageViewCornerRadius = [[UIImageView alloc] initWithFrame:CGRectMake(10, 400, 50, 50)];
     imageViewCornerRadius.image = imageCornerRadius;
     [self.view addSubview:imageViewCornerRadius];
+    
+    [self generateQRCodeSample];
+}
+
+- (void)generateQRCodeSample
+{
+    // 普通二维码
+    UIImage *normal = [UIImage generateQRWithString:@"普通二维码" size:CGSizeMake(50, 50)];
+    UIImageView *normalIV = [[UIImageView alloc] initWithFrame:CGRectMake(10, 460, 50, 50)];
+    [normalIV setImage:normal];
+    [self.view addSubview:normalIV];
+    
+    // 颜色二维码
+    UIImage *colorI = [UIImage generateQRWithString:@"颜色二维码" size:CGSizeMake(50, 50) tintColor:[UIColor purpleColor] backgroundColor:[UIColor blueColor]];
+    UIImageView *colorIV = [[UIImageView alloc] initWithFrame:CGRectMake(70, 460, 50, 50)];
+    [colorIV setImage:colorI];
+    [self.view addSubview:colorIV];
+    
+    // logo二维码
+    UIImage *logoI = [UIImage generateQRWithString:@"logo二维码" size:CGSizeMake(50, 50) tintColor:[UIColor redColor] backgroundColor:[UIColor whiteColor] logo:[UIImage imageNamed:@"dao"]];
+    UIImageView *logoIV = [[UIImageView alloc] initWithFrame:CGRectMake(130, 460, 50, 50)];
+    [logoIV setImage:logoI];
+    [self.view addSubview:logoIV];
+    
+    // 条形码
+    UIImage *barCodeI = [UIImage generateBarCodeWithString:@"barcode" size:CGSizeMake(100, 50)];
+    UIImageView *barCodeIV = [[UIImageView alloc] initWithFrame:CGRectMake(190, 460, 100, 50)];
+    [barCodeIV setImage:barCodeI];
+    [self.view addSubview:barCodeIV];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
@@ -149,14 +179,5 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
